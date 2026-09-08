@@ -1,6 +1,6 @@
 # El Gringo J&M
 
-Sitio web estatico de la polleria, listo para abrir y editar en VS Code.
+Sitio web estatico de la polleria
 
 ## Estructura
 
