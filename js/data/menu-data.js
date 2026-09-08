@@ -1,0 +1,73 @@
+// Datos editables de la carta. Modifica aqui nombres, precios y descripciones.
+
+const categories = [
+  'Todos',
+  'Pollos a la Brasa',
+  'Combos',
+  'Chaufas',
+  'Saltados',
+  'Salchipapas y Mas',
+  'Sopas',
+  'Especiales',
+  'Bebidas',
+];
+
+// Una foto por categoria. Cambia solo la ruta si cambias el nombre del archivo.
+const imgs = {
+  'Pollos a la Brasa': 'assets/images/categories/pollos-a-la-brasa.jpg',
+  Combos: 'assets/images/categories/combos.jpg',
+  Chaufas: 'assets/images/categories/chaufas.jpg',
+  Saltados: 'assets/images/categories/saltados.jpg',
+  'Salchipapas y Mas': 'assets/images/categories/salchipapas.jpg',
+  Sopas: 'assets/images/categories/sopas.jpg',
+  Especiales: 'assets/images/categories/especiales.jpg',
+  Bebidas: 'assets/images/categories/bebidas.jpg',
+};
+
+const products = [
+  ['Chaufa de Pollo', 11, 'Chaufas', 'Arroz salteado al wok con pollo y el toque de la casa.'],
+  ['Chaufa de Carne',15,'Chaufas','Arroz al wok, carne y verduras frescas.'],
+  ['Chaufa de Chancho',15,'Chaufas','Chaufa con chancho dorado y cebolla china.'],
+  ['Chaufa Salvaje',15,'Chaufas','Una combinacion intensa de sabores al wok.'],
+  ['Chaufa Especial',16,'Chaufas','Nuestro chaufa con extra sabor y abundancia.'],
+  ['Aeropuerto',13,'Chaufas','Chaufa y fideos salteados en una sola porcion.'],
+  ['Salchipapa',10,'Salchipapas y Mas','Papas crocantes, salchicha y cremas.'],
+  ['Salchipapa Especial',12,'Salchipapas y Mas','La clasica con un toque extra de sabor.'],
+  ['Salchichaufa',13,'Salchipapas y Mas','Chaufa con salchicha dorada al wok.'],
+  ['Salchichaufa Especial',14,'Salchipapas y Mas','Version especial, bien servida y sabrosa.'],
+  ['Caldo de Gallina con Presa',12,'Sopas','Caldo reconfortante, gallina y mucho sabor.'],
+  ['Caldo de Gallina con Huevo',8,'Sopas','Caldito casero con huevo y hierbas.'],
+  ['Saltado de Pollo',13,'Saltados','Pollo, cebolla y tomate salteados al fuego.'],
+  ['Lomo Saltado',14,'Saltados','Carne salteada al wok con su juguito especial.'],
+  ['Tallarín Saltado de Pollo',13,'Saltados','Tallarines y pollo al wok.'],
+  ['Tallarín Saltado de Carne',14,'Saltados','Tallarines con carne y verduras salteadas.'],
+  ['Alitas Acevichadas',17,'Especiales','Alitas crocantes bañadas en salsa acevichada.'],
+  ['Alitas BBQ',16,'Especiales','Alitas doradas con salsa BBQ.'],
+  ['1/8 de Pollo a la Brasa',9,'Pollos a la Brasa','Con papas fritas y ensalada fresca.'],
+  ['1/4 de Pollo a la Brasa',16,'Pollos a la Brasa','Con papas fritas y ensalada fresca.'],
+  ['1/2 Pollo a la Brasa',35,'Pollos a la Brasa','Ideal para compartir, con sus guarniciones.'],
+  ['Pollo Entero a la Brasa',68,'Pollos a la Brasa','El clasico completo para la mesa.'],
+  ['Monstrito 1/8',13,'Combos','Chaufa, papas y 1/8 de pollo.'],
+  ['Monstrito 1/4',17,'Combos','Chaufa, papas y 1/4 de pollo.'],
+  ['Pollo a lo Pobre 1/8',15,'Combos','Pollo, huevo, platano y papas.'],
+  ['Pollo a lo Pobre 1/4',18,'Combos','Pollo, huevo, platano y papas.'],
+  ['Broaster 1/8',12,'Combos','Pollo broaster con papas y cremas.'],
+  ['Broaster 1/4',16,'Combos','Porcion broaster bien crocante.'],
+  ['Alitas Broaster',10,'Combos','Alitas crocantes para picar.'],
+  ['Gaseosa 500 ml',4,'Bebidas','Coca Cola, Inca Kola, Sprite o Fanta.'],
+  ['Coca Cola Personal 380 ml',3.5,'Bebidas','Bien helada para acompanar.'],
+  ['Inca Kola Personal 350 ml',3.5,'Bebidas','El sabor del Peru.'],
+  ['Gordita',5,'Bebidas','Gaseosa helada en presentacion gordita.'],
+  ['Gaseosa 1 L',7,'Bebidas','Inca Kola, Coca Cola o Guarana.'],
+  ['Gaseosa 1.5 L',10,'Bebidas','Inca Kola, Coca Cola o Guarana.'],
+  ['Chicha Morada Vaso',4,'Bebidas','Chicha morada refrescante de la casa.'],
+  ['Chicha Morada Jarra 1 L',10,'Bebidas','Jarra para compartir.'],
+  ['Agua Mineral 500 ml',2.5,'Bebidas','Agua mineral sin gas.'],
+  ['Guarana',4,'Bebidas','Personal; consulta por 1 L y 1.5 L.']
+].map(([name, price, category, description], id) => ({
+  id,
+  name,
+  price,
+  category,
+  description,
+}));
